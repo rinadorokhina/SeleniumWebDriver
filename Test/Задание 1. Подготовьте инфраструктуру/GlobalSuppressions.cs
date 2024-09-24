@@ -3,6 +3,3 @@
 // Project-level suppressions either have no target or are given
 // a specific target and scoped to a namespace, type, member, etc.
 
-using System.Diagnostics.CodeAnalysis;
-
-[assembly: SuppressMessage("Structure", "NUnit1032:An IDisposable field/property should be Disposed in a TearDown method", Justification = "<Ожидание>", Scope = "member", Target = "~F:csharp_example.MyFirstTest.driver")]

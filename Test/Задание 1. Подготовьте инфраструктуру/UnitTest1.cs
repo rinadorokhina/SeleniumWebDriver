@@ -1,11 +1,10 @@
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
-namespace csharp_example
+namespace Test
 {
     [TestFixture]
-    public class MyFirstTest
+    public class Test
     {
         private ChromeDriver driver;
         private WebDriverWait wait;
@@ -21,6 +20,7 @@ namespace csharp_example
         public void FirstTest()
         {
             driver.Url = "https://software-testing.ru/";
+            Thread.Sleep(1000);
         }
 
         [TearDown]
