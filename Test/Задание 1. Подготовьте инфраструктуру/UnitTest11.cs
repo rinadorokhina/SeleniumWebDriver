@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 namespace Test
 {
     [TestFixture]
-    public class Test
+    public class L1
     {
         private ChromeDriver driver;
         private WebDriverWait wait;

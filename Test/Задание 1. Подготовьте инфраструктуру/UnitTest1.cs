@@ -1,4 +1,4 @@
-using OpenQA.Selenium.Chrome;
+sing OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
 namespace Test
