@@ -21,7 +21,6 @@ namespace Test2
         [Test]        
         public void Test7()
         {
-
             driver.Url = "http://localhost:8080/litecart/";
             var products = driver.FindElements(By.XPath("//li[contains(@class,'product')]"));
             foreach (var product in products)
@@ -29,7 +28,7 @@ namespace Test2
                 try
                 {
                     var stickers = product.FindElements(By.CssSelector("div.sticker"));
-                    Assert.AreEqual(1, stickers.Count);
+                    Assert.That(stickers.Count, Is.EqualTo(1));
                 }
                 catch (AssertionException)
                 {
