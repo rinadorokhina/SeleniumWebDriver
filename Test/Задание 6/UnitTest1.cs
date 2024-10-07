@@ -18,9 +18,8 @@ namespace Test2
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
-
         [Test]
-        public void FirstTest()
+        public void Test6()
         {
             driver.Url = "http://localhost:8080/litecart/admin/";
             driver.FindElement(By.Name("username")).SendKeys("admin");
@@ -29,9 +28,34 @@ namespace Test2
             driver.FindElement(By.Name("login")).Click();
             string title = "My Store";
             wait.Until(d => d.Title.Equals(title));
-            Thread.Sleep(1000);
+            ClickAllElements();
+           
         }
-
+        
+        public void ClickAllElements() 
+        {
+            var menuItem = driver.FindElements(By.Id("app-"));
+            for (int i = 0; i < menuItem.Count; i++)
+            {
+                try
+                {
+                    menuItem = driver.FindElements(By.Id("app-"));
+                    menuItem[i].Click();
+                    Assert.IsTrue(driver.FindElement(By.CssSelector("h1")).Displayed);
+                    var subMenuItem = driver.FindElements(By.XPath("//*[@id=\"app-\"]/ul"));
+                    for (int j = 0; j < subMenuItem.Count; j++)
+                    {
+                        subMenuItem = driver.FindElements(By.XPath("//*[@id=\"app-\"]/ul"));
+                        subMenuItem[j].Click();
+                        Assert.IsTrue(driver.FindElement(By.CssSelector("h1")).Displayed);
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
         [TearDown]
         public void stop()
         {
