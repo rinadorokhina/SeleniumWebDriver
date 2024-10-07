@@ -30,11 +30,9 @@ namespace Test2
                 {
                     var stickers = product.FindElements(By.CssSelector("div.sticker"));
                     Assert.AreEqual(1, stickers.Count);
-                  
                 }
                 catch (AssertionException)
                 {
-                    
                     Assert.Fail("Error");
                 } 
             }

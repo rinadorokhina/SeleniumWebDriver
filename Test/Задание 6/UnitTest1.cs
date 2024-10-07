@@ -29,7 +29,6 @@ namespace Test2
             string title = "My Store";
             wait.Until(d => d.Title.Equals(title));
             ClickAllElements();
-           
         }
         
         public void ClickAllElements() 
