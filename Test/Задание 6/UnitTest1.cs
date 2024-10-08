@@ -44,7 +44,7 @@ namespace Test2
                     var subMenuItem = driver.FindElements(By.XPath("//*[@id=\"app-\"]/ul"));
                     for (int j = 0; j < subMenuItem.Count; j++)
                     {
-                        subMenuItem = driver.FindElements(By.XPath("//*[@id=\"app-\"]/ul"));
+                        subMenuItem = driver.FindElements(By.CssSelector("ul.docs li"));
                         subMenuItem[j].Click();
                         Assert.IsTrue(driver.FindElement(By.CssSelector("h1")).Displayed);
                     }
