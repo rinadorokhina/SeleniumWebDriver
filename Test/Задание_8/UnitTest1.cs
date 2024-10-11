@@ -60,7 +60,7 @@ namespace Test2
                 if (zoneCount > 0)
                 {
                     countryElements[i].FindElement(By.CssSelector("i.fa.fa-pencil")).Click();
-                    var geoZoneElements = driver.FindElements(By.CssSelector("td:nth-child(3)"));
+                    var geoZoneElements = driver.FindElements(By.CssSelector("#table-zones td:nth-child(3)"));
                     List<string> geoZoneNames = new List<string>();
                     for (int j = 0; j < geoZoneElements.Count - 1; j++)
                     {

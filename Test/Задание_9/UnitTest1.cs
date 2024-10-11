@@ -39,7 +39,7 @@ namespace Test2
                 var zoneElements = driver.FindElements(By.CssSelector("#table-zones td:nth-child(3) option:checked"));
                 List<string> zoneNames = new List<string>();
                 
-                for (int j = 0; j < zoneElements.Count - 1; j++)
+                for (int j = 0; j < zoneElements.Count; j++)
                 {
                     string geoZoneName = zoneElements[j].GetAttribute("textContent");
                     zoneNames.Add(geoZoneName);
