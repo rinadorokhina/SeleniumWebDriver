@@ -17,8 +17,8 @@ namespace Test2
         [SetUp]
         public void Start()
         {
-          //driver = new ChromeDriver();
-          driver = new FirefoxDriver();
+          driver = new ChromeDriver();
+          //driver = new FirefoxDriver();
           //driver = new EdgeDriver();
         }
         [Test]
@@ -31,8 +31,10 @@ namespace Test2
             string campaignPriceMainPageText = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).Text; // акционная цена на главной
             string campaignPriceMainPageStrong = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetAttribute("tagName"); //тег жирности у акционной цена
             string campaignPriceMainPageColor = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetCssValue("color"); // цвет акционной цены
-            Size regularPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .regular-price")).Size; // размер обычной цены
-            Size campaignPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).Size; // размер акционной цены
+            string regularPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .regular-price")).GetCssValue("font-size");// размер обычной цены
+            string campaignPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetCssValue("font-size");// размер акционной цены
+
+
             
             //проверка акционная цена жирная и красная на главной странице
             var match = Regex.Match(campaignPriceMainPageColor, @"rgba?\((\d+),\s+(\d+),\s+(\d+)(?:,\s+\d+)?\)");
@@ -44,11 +46,7 @@ namespace Test2
             });
             
             //проверка, что акционная цена больше, чем обычная
-            Assert.Multiple(() =>
-            {
-                Assert.That(campaignPriceMainPageSize.Width, Is.GreaterThan(regularPriceMainPageSize.Width));
-                Assert.That(campaignPriceMainPageSize.Height, Is.GreaterThan(regularPriceMainPageSize.Height));
-            });
+            Assert.That(campaignPriceMainPageSize, Is.GreaterThan(regularPriceMainPageSize));
 
             //Страница товара
             driver.FindElement(By.CssSelector("#box-campaigns a.link")).Click();
@@ -58,8 +56,8 @@ namespace Test2
             string regularPriceProductPageStrong = driver.FindElement(By.CssSelector("#box-product .regular-price")).GetAttribute("tagName"); //тег зачеркнутости у акционной цена
             string campaignPriceProductPageColor = driver.FindElement(By.CssSelector("#box-product .campaign-price")).GetCssValue("color"); // цвет акционной цены
             string regularPriceProductPageColor = driver.FindElement(By.CssSelector("#box-product .regular-price")).GetCssValue("color"); // цвет обычной цены
-            Size regularPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .regular-price")).Size; // размер обычной цены
-            Size campaignPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .campaign-price")).Size; // размер акционной цены
+            string regularPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .regular-price")).GetCssValue("font-size");// размер обычной цены
+            string campaignPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .campaign-price")).GetCssValue("font-size");// размер акционной цены
 
             //проверка, что текст на главной равен тексту на странице товара
             Assert.That(productNameProductPageText, Is.EqualTo(productNameMainPageText));
@@ -90,11 +88,7 @@ namespace Test2
             });
 
             //проверка, что акционная цена больше, чем обычная
-            Assert.Multiple(() =>
-            {
-                Assert.That(campaignPriceProductPageSize.Width, Is.GreaterThan(regularPriceProductPageSize.Width));
-                Assert.That(campaignPriceProductPageSize.Height, Is.GreaterThan(regularPriceProductPageSize.Height));
-            });
+            Assert.That(campaignPriceProductPageSize, Is.GreaterThan(regularPriceProductPageSize));              
         }
 
         [TearDown]
