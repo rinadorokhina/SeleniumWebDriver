@@ -5,6 +5,7 @@ using OpenQA.Selenium.Firefox;
 
 using System.Drawing;
 using OpenQA.Selenium.Edge;
+using System.Globalization;
 
 
 namespace Test2
@@ -21,6 +22,14 @@ namespace Test2
           //driver = new FirefoxDriver();
           //driver = new EdgeDriver();
         }
+        public double ParseSize(string regularPriceMainPageSize)
+        {
+            string numberregularPriceMainPageSize = new string(regularPriceMainPageSize.Where(c => char.IsDigit(c) || c == '.').ToArray());
+            double resultregularPriceMainPageSize = double.Parse(numberregularPriceMainPageSize, CultureInfo.InvariantCulture);
+            return resultregularPriceMainPageSize;
+        }
+
+
         [Test]
         public void Test()
         {
@@ -32,10 +41,10 @@ namespace Test2
             string campaignPriceMainPageStrong = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetAttribute("tagName"); //тег жирности у акционной цена
             string campaignPriceMainPageColor = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetCssValue("color"); // цвет акционной цены
             string regularPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .regular-price")).GetCssValue("font-size");// размер обычной цены
+            double resultregularPriceMainPageSize = ParseSize(regularPriceMainPageSize); //перевод в число размер шрифта
             string campaignPriceMainPageSize = driver.FindElement(By.CssSelector("#box-campaigns .campaign-price")).GetCssValue("font-size");// размер акционной цены
+            double resultcampaignPriceMainPageSize = ParseSize(campaignPriceMainPageSize); //перевод в число размер шрифта
 
-
-            
             //проверка акционная цена жирная и красная на главной странице
             var match = Regex.Match(campaignPriceMainPageColor, @"rgba?\((\d+),\s+(\d+),\s+(\d+)(?:,\s+\d+)?\)");
             string [] firstThreeNumbers = (match.Groups[1].Value + "," + match.Groups[2].Value + "," + match.Groups[3].Value).Split(',');
@@ -46,7 +55,7 @@ namespace Test2
             });
             
             //проверка, что акционная цена больше, чем обычная
-            Assert.That(campaignPriceMainPageSize, Is.GreaterThan(regularPriceMainPageSize));
+            Assert.That(resultcampaignPriceMainPageSize, Is.GreaterThan(resultregularPriceMainPageSize));
 
             //Страница товара
             driver.FindElement(By.CssSelector("#box-campaigns a.link")).Click();
@@ -57,7 +66,9 @@ namespace Test2
             string campaignPriceProductPageColor = driver.FindElement(By.CssSelector("#box-product .campaign-price")).GetCssValue("color"); // цвет акционной цены
             string regularPriceProductPageColor = driver.FindElement(By.CssSelector("#box-product .regular-price")).GetCssValue("color"); // цвет обычной цены
             string regularPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .regular-price")).GetCssValue("font-size");// размер обычной цены
+            double resultregularPriceProductPageSize = ParseSize(regularPriceProductPageSize); //перевод в число размер шрифта
             string campaignPriceProductPageSize = driver.FindElement(By.CssSelector("#box-product .campaign-price")).GetCssValue("font-size");// размер акционной цены
+            double resultcampaignPriceProductPageSize = ParseSize(campaignPriceProductPageSize); //перевод в число размер шрифта
 
             //проверка, что текст на главной равен тексту на странице товара
             Assert.That(productNameProductPageText, Is.EqualTo(productNameMainPageText));
@@ -88,7 +99,7 @@ namespace Test2
             });
 
             //проверка, что акционная цена больше, чем обычная
-            Assert.That(campaignPriceProductPageSize, Is.GreaterThan(regularPriceProductPageSize));              
+            Assert.That(resultcampaignPriceProductPageSize, Is.GreaterThan(resultregularPriceProductPageSize));              
         }
 
         [TearDown]
