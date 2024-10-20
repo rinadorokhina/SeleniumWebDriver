@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5947433-C037-45FD-AB85-4A536D7E59A9}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12.csproj|c:\\users\\dorok\\desktop\\github\\seleniumwebdriver\\test\\\u0437\u0430\u0434\u0430\u043D\u0438\u0435_12\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5947433-C037-45FD-AB85-4A536D7E59A9}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12.csproj|solutionrelative:\u0437\u0430\u0434\u0430\u043D\u0438\u0435_12\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62CC4FCC-05A4-4601-AA7F-B55FE74233A7}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14.csproj|c:\\users\\dorok\\desktop\\github\\seleniumwebdriver\\test\\\u0437\u0430\u0434\u0430\u043D\u0438\u0435_14\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62CC4FCC-05A4-4601-AA7F-B55FE74233A7}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14.csproj|solutionrelative:\u0437\u0430\u0434\u0430\u043D\u0438\u0435_14\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{548E4411-68EA-4C5C-B380-EF607D7AEDA6}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13.csproj|c:\\users\\dorok\\desktop\\github\\seleniumwebdriver\\test\\\u0437\u0430\u0434\u0430\u043D\u0438\u0435_13\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{548E4411-68EA-4C5C-B380-EF607D7AEDA6}|\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13.csproj|solutionrelative:\u0437\u0430\u0434\u0430\u043D\u0438\u0435_13\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,26 +36,39 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs",
-              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_11\\UnitTest1.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAqAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs",
+              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_3\\UnitTest1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:31:15.191Z",
+              "WhenOpened": "2024-10-20T15:35:51.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\UnitTest1.cs",
+              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_13\\UnitTest1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:28:46.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\UnitTest1.cs*",
-              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_12\\UnitTest1.cs*",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAswFsAAABDAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\dorok\\Desktop\\GitHub\\SeleniumWebDriver\\Test\\\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\UnitTest1.cs",
+              "RelativeToolTip": "\u0417\u0430\u0434\u0430\u043D\u0438\u0435_14\\UnitTest1.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:30:13.917Z",
+              "WhenOpened": "2024-10-20T14:25:50.419Z",
               "EditorCaption": ""
             }
           ]
